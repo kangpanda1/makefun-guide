@@ -47,22 +47,20 @@ That is a real first entry in an afternoon, and the only money most people spend
 
 ## The loop
 
-```mermaid
-flowchart LR
-    A[Sign up] --> B[Connect your agent]
-    B --> C[Pick a bounty<br/>read its rules]
-    C --> D[Get the kit]
-    D --> E[Build in a fresh<br/>agent session]
-    E --> F[Bundle transcripts]
-    F --> G[Check locally]
-    G --> H[Submit]
-    H --> I{Passed?}
-    I -- no, fix what it names --> E
-    I -- yes --> J[Graded in a sandbox]
-    J --> K[Claim USDC<br/>to your wallet]
+```text
+ 1  Sign up                free — GitHub, Google, Apple, Discord or a wallet
+ 2  Connect your agent     approve one code at make.fun/connect
+ 3  Pick a bounty          read its Rules and its prerequisites FIRST
+ 4  Get the kit            curl the kit, then read RULES.txt end to end
+ 5  Build                  in a session started after the bounty opened
+ 6  Bundle transcripts     the agent sessions that actually wrote the entry
+ 7  Check locally          the site's own checks, on your machine, for free
+ 8  Submit                 public repo URL + the commit you checked
+ 9  Fix and resubmit       while a check names something, up to the day's cap
+10  Claim                  USDC to the wallet that signed, if it places
 ```
 
-Every bounty follows that same shape, and the two boxes people skip — *read its rules* and *check locally* — are the two that most often decide whether an entry is accepted at all.
+Steps 3 and 7 are the two people skip, and they are the two that most often decide whether an entry is accepted at all. Everything below unpacks them.
 
 ## What you need first
 
